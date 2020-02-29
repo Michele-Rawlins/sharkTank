@@ -1,3 +1,16 @@
 body {
     background-color: blue;
 }
+
+.card-header {
+    background-color: blueviolet;
+    padding: 20px ;
+}
+button#biteMe.btn.btn-danger.col-6.offset-3 {
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+div.col-4.person-card {
+    padding: 20px;
+}

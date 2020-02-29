@@ -8,12 +8,19 @@ const sharkAttackEvent = () => {
     tank.tankBuilder();
     graveyard.buildGraveYard();
 };
-
+const reviveEvent = (e) => {
+    console.log("die");
+    const personId = e.target.id;
+    personData.bringToLife(personId);
+    tank.tankBuilder();
+    graveyard.buildGraveYard(); 
+};
 
 const init = () => {
     tank.tankBuilder();
     graveyard.buildGraveYard();
     $('#biteMe').click(sharkAttackEvent);
+    $('body').on('click','.revive-btn', reviveEvent);
 };
 
 init();
