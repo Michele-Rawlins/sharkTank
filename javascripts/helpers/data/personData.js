@@ -31,4 +31,3 @@ const persons = [
 
   };
   export default { getAlivePersons };
-  
